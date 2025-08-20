@@ -104,7 +104,7 @@ int main() {
     printf("Densidade populacional: %.2f\n",carta.densidade2);
     printf("Pib per capta: %.2f\n", carta.percapta2);
 
-    //logica de comparação das cartas ja com mensagem de vencedora
+    //menu interativo
     printf("--Vamos ver qual a melhor carta--\n");
     printf("Escolha abaixo o atributo que deve ser comparado\n");
     printf("1. Nome da Cidade.\n"); 
@@ -115,6 +115,7 @@ int main() {
     printf("6.Densidade demográfica\n");
     scanf("%i", &carta.escolhaPlayer);
     
+    //lógica para carta vencedora
     switch (carta.escolhaPlayer)
     {
     case 1:
